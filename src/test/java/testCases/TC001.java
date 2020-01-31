@@ -34,7 +34,7 @@ public class TC001 extends ExtReportDemo {
 			driver.get("https://www.indiatoday.in/");
 						
 			System.out.println(driver.getTitle());
-			Assert.assertTrue(false);
+			Assert.assertTrue(true);
 	}
 	
 	@AfterTest

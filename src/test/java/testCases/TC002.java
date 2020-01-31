@@ -36,6 +36,8 @@ public class TC002 extends ExtReportDemo {
 		driver.navigate().to("https://www.linkedin.com/notifications/");
 		Thread.sleep(4000);
 		driver.findElement(By.partialLinkText("Sign")).click();
+		System.out.println(driver.getTitle());
+		
 		Thread.sleep(4000);
 		// assertTrue(false);
 		assertFalse(false);
