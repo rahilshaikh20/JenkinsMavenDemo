@@ -9,6 +9,8 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
+
 import Base.BasePage;
 import extentReports.ExtReportDemo;
 
@@ -32,6 +34,10 @@ public class TC001 extends ExtReportDemo {
 			//driver = b.loadDriver();
 			driver =BasePage.Initialize();
 			driver.get("https://www.indiatoday.in/");
+			
+			//Loggers to log data in the report
+	        test.log(Status.INFO, "Test started");
+	        test.log(Status.INFO, "Info logged in report");
 						
 			System.out.println(driver.getTitle());
 			Assert.assertTrue(true);

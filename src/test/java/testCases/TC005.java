@@ -24,8 +24,33 @@ public  static WebDriver driver;
 	{
 			test = extent.createTest("TC_0005");
 			System.out.println("TC 5 Passed");
+			
+			int[] arr = new int[]{ 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15  }; 
+			
+			for (int i : arr) {
+				
+				if(i%3==0 && i%5==0 )
+				{
+					System.out.println("FizzBuzz");
+					//break;
+				}
+				
+				else if (i%3==0  )
+				System.out.println("Fizz");
+					
+				else if(i%5==0)
+						System.out.println("Buzz");
+				
+				else 
+					System.out.println(i);
+																	
+				}
+				
+			
+			}
+			
 		
-	}
+	
 
 }
 
