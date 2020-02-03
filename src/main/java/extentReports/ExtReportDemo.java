@@ -32,7 +32,7 @@ public class ExtReportDemo
     @BeforeSuite
     public void setUp()
     {
-        htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") +"/test-output/Rahil_Report.html");
+        htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir")+ "/Rahil_Report.html");
         extent = new ExtentReports();
         extent.attachReporter(htmlReporter);
         
